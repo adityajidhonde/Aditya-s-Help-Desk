@@ -1,0 +1,289 @@
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.lpart{
+    width: 50%;
+  height: 100%;
+}
+
+.slide {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("./vectors/a.jpg");
+  background-size: 100% 100%;
+}
+.slide2 {
+  background-image: url("./vectors/b.jpeg");
+  background-size: 100% 100%;
+}
+.slide3 {
+  background-image: url("./vectors/c.jpg");
+  background-size: 100% 100%;
+}
+.slide4 {
+    background-image: url("./vectors/d.jpg");
+    background-size: 100% 100%;
+  }
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+} 
+
+ #arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+} 
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  On hover, add a black background color with a little bit see-through */
+ /* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  } */
+
+
+/* Slider styling begins */
+
+    .smimage{
+        display: flex;
+        height: 20%;
+        width: 100%;
+    }
+    .im1,.im2,.im3,.im4{
+        cursor: pointer;
+        padding-top: 3%;
+    padding-right: 3%;
+        width: 100%;
+    }
+    .im4{
+        padding-right: 0%;
+    }
+    .im1 img,.im2 img,.im3 img,.im4 img{
+        width: 100%;
+        height: 78%;
+    }
+
+/* Slider ends */
+
+.divid{
+    display: flex;
+    width: 100%;
+}
+
+/* 5 Star */
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.infor h1{
+    font-size: 3em;
+}
+.infor h2{
+    padding: 0% 66% 0% 0%;
+    font-family: cursive;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.infor{
+    margin-left: 7%;
+    margin-top: 3%;
+    width: 50%;
+    font-family: ui-sans-serif;
+}
+
+.infor p{
+    font-family: cursive;
+    opacity: 0.7;
+}
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+/* 5 star end */
+
+.cards{
+    display: flex;
+    padding: 2% 0%;
+}
+
+.c1{
+    display: flex;
+    width: 28%;
+}
+.c2{
+    display: flex;
+    width: 28%;
+}
+.c3{
+    display: flex;
+    width: 28%;
+}
+
+.op{
+    display: flex;
+}
+.op p{
+    margin-top: 3%;
+    width: 36%;
+}
+.op i{
+    padding: 1%;
+}
+.rup h2{
+    font-size: 32px;
+}
+.add{
+    background-color: black;
+    color: white;
+    width: 18%;
+    height: 6%;
+}
+.wish{
+    background-color: white;
+    color: black;
+    width: 18%;
+    height: 6%;
+}
+.pho{
+    padding: 1% 5% 1% 1%;
+    margin-top: 21.28px;
+}
+.writ h4{
+    font-family: cursive;
+    opacity: 0.7;
+}
+.writ p{
+    font-family: cursive;
+    font-size: 11px;
+    opacity: 0.7;
+}
+.sub{
+    margin: 2%;
+    margin-left: 0%;
+}
+
+@media only screen and (max-width: 786px){
+    .divid{
+        display: block;
+    }
+    .lpart{
+        width: 100%;
+    }
+    .infor{
+        width: 100%;
+        margin: 0% 0%;
+    }
+    .infor h1{
+        text-align: center;
+    }
+    .cards{
+    text-align: center;
+    justify-content: center;}
+    .c1{
+        padding:4%;
+    }
+    .c2{
+        padding:4%;
+    }
+    .c3{
+        padding:4%;
+    }
+}
